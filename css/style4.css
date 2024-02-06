@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;         
+}   
+body {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg,rgb(19, 19, 114),rgb(4, 4, 66));
+  }
+  .navbar {
+    background-color: rgb(1, 1, 16) ;
+    max-width: 100%;
+    height: 120px;
+    background-size: auto;
+}
+  nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    /* font-weight: bold; */
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    /* font-family: Lato, sans-serif; */
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+  a::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: lightsteelblue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
+  nav li a:hover {
+    color: lightblue;
+  }
+  
+ nav a:hover {
+    color: lightblue;
+  }
+  
+ nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  nav li {
+    list-style: none;
+    padding: 5px;
+    margin-left: 18px;
+    margin-top: 25px;
+   
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .navbar li img {
+    transform: scale(4.5);
+    height: 100px;
+    padding: 20px;
+    margin: -4px;
+  
+  }
+ .left{
+     background-color: rgb(3, 3, 32);
+     height: 550px;
+     width: 50%;
+     background-size: auto;
+     margin-top: 40px;
+     border: 2px solid rgb(3, 3, 32);
+     border-radius: 10px;
+ }
+ .text{
+  margin-left: 12px;
+ }
+ .right{
+  height: 550px;
+  width: 50%;
+  background-size: auto;
+  margin-top: 40px;
+  border:1px solid none;
+  border-radius: 10px; 
+  margin-bottom: 0px;
+  background-image: url("../photos/aboutus.jpg");
+  background-size: 220%;
+  background-repeat: no-repeat;
+  
+ }
+ .footer {
+  background-color: rgb(1, 1, 16);
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(189, 196, 203);
+  width: 100%;
+  background-size: auto;
+  max-width: 100%;
+  height: 320px;
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+}
+
+ul>li {
+  padding: 4px;
+  color:#C5CAE9;
+}
+ul>li>a{
+text-decoration: none;
+color: #C5CAE9;
+}
+
+ul>li:hover {
+  color: #957bda;
+  cursor: pointer
+}
+
+hr {
+  border-width: 3px
+}
+
+.card1 {
+  padding: 2% 7%
+
+}
+
+.social>i {
+  padding: 1%;
+  font-size: 15px
+}
+
+.social>i:hover {
+  color: #957bda;
+  cursor: pointer;
+}
+
+.policy>div {
+  padding: 4px
+}
+.heading {
+  font-family: 'Titillium Web', sans-serif;
+  color: black
+}
+.divider {
+  border-top: 2px solid
+}
+.card:hover{
+   margin: 10px;
+   
+}   

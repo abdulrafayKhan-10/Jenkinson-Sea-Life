@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;         
+}
+
+body{
+    background: linear-gradient(90deg , rgb(19, 19, 114), rgb(4, 4, 66));
+    /* background: #fff; */
+
+}
+.contactus{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+    height: 900px;
+}
+.contactus .title{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-size: 2em;
+}
+.contactus .title h2{
+    color: white;
+    font-weight: 600;
+}
+
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background: rgb(3, 3, 32);
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/* form */
+.formbox{
+    position: relative;
+    width: 100%;
+    }
+    .formbox .row50{
+        display: flex;
+        gap: 20px;
+    }
+    .inputbox{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 50%;
+    }
+    .formbox.row100 .inputbox{
+          width: 100%;
+}
+.inputbox span{
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500 ;
+}
+.inputbox input{
+      padding: 10px;
+      font-size: 1.1em;
+      outline: none;
+      border: 1px solid #333;
+}
+.inputbox textarea{
+      padding: 10px;
+      font-size: 1.1em;
+      outline: none;
+      border: 1px solid #333;
+      resize: none;
+      min-height: 220px;
+      margin-bottom: 10px;
+}
+.inputbox input[type="button"]{
+    background:  rgb(3, 3, 32);
+
+    color: #fff;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+    border-radius: 5px;
+    border: 1px white solid;
+}
+.inputbox input[type="button"]:hover
+{
+    color: rgb(3, 3, 32);
+    background-color: white;
+    border-radius: 8px;
+    border: 1px white solid;
+}
+.inputbox ::placeholder{
+    color: #999;
+}
+/* info */
+.info{
+     background-color: rgb(3, 3, 32);
+}
+.info h3{
+    color: #fff;
+}
+.info .infobox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infobox div span{
+    min-width: 40px;
+    height: 40px;
+    color:#fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infobox div p{
+    color: #fff;
+    font-size: 1.1em;
+}
+.info .infobox div a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+.sci li a:hover{
+    color: #fff;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+/* responsive design */
+@media(max-width:991px){
+    body{
+        background: #fff;
+}
+.contactus
+{
+    padding: 20px;
+}
+.box{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "form"
+    "info"
+    "map";
+}
+.formbox .row50{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
+.inputbox{
+     width: 100%;
+}
+.contact{
+    padding: 30px;
+}
+.map{
+    min-height: 300px;
+    padding: 30px;
+}
+}
+body {
+    width: 100%;
+    height: 100%;
+  }
+  .navbar {
+    background-color: rgb(1, 1, 16) ;
+    max-width: 100%;
+
+    height: 120px;
+    background-size: auto;
+}
+  nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    /* font-weight: bold; */
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    /* font-family: Lato, sans-serif; */
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+  a::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: lightsteelblue;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+  }
+  nav li a:hover {
+    color: lightblue;
+  }
+  
+  a:hover {
+    color: lightblue;
+  }
+  
+  a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  nav li {
+    list-style: none;
+    padding: 5px;
+    margin-left: 18px;
+    margin-top: 25px;
+   
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .navbar li img {
+    transform: scale(4.5);
+    height: 100px;
+    padding: 20px;
+    margin: -4px;
+  
+  }
+  .footer {
+    background-color: rgb(1, 1, 16);
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(189, 196, 203);
+    width: 100%;
+    background-size: auto;
+    max-width: 100%;
+    height: 320px;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+}
+
+ul>li {
+    padding: 4px;
+    color:#C5CAE9;
+}
+ul>li>a{
+  text-decoration: none;
+  color: #C5CAE9;
+}
+#first_name_required{
+    color: red;
+    display: none;
+}
+#second_name_required{
+    color: red;
+    display: none;
+}
+#gmail_required{
+    color: red;
+    display: none;
+}
+#number_required{
+    color: red;
+    display: none;
+}
+#msg_required{
+    color: red;
+    display: none;
+}
+#submit_error{
+    color: red;
+    display: none;
+}
+
+
+ul>li:hover {
+    color: #957bda;
+    cursor: pointer
+}
+
+hr {
+    border-width: 3px
+}
+
+.card1 {
+    padding: 2% 7%
+  
+}
+
+.social>i {
+    padding: 1%;
+    font-size: 15px
+}
+
+.social>i:hover {
+    color: #957bda;
+    cursor: pointer;
+}
+
+.policy>div {
+    padding: 4px
+}
+.heading {
+    font-family: 'Titillium Web', sans-serif;
+    color: black
+}
+
+.divider {
+    border-top: 2px solid
+}
+.card:hover{
+     margin: 10px;
+     
+}   

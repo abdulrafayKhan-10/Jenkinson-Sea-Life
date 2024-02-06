@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Lora', serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background-image: url("../photos/bg1.jpg");
+  max-width: 100%;
+   background-repeat: no-repeat;
+  height: 600px;
+  background-size: auto;
+
+
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  /* font-weight: bold; */
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  /* font-family: Lato, sans-serif; */
+
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+
+}
+
+a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: lightsteelblue;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+nav li a:hover {
+  color: lightblue;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+nav li {
+  list-style: none;
+  padding: 5px;
+  margin-left: 18px;
+  margin-top: 25px;
+ 
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.text {
+  text-align: justify;
+  margin-top: 70px;
+  color: white;
+
+}
+
+.header li img {
+  transform: scale(4.5);
+  height: 100px;
+  padding: 20px;
+  margin: -4px;
+
+}
+
+.middle_page {
+  height: 1150px; 
+  width: 100%;
+  background-color: rgb(3, 3, 32);
+  background-size: auto;
+}
+
+.middle_page h2 {
+  text-align: center;
+  color: white;
+
+}
+
+.card_primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 10px;
+}
+.card_primary .card {
+  margin: 30px;
+  margin-left: 50px;
+  width: 700px;
+}
+
+.card_secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 10px;
+} 
+.card_secondary .card{
+  margin: 30px;
+  margin-left: 50px;  
+  width: 700px;
+}
+.card_after_secondary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 10px;
+} 
+.card_after_secondary .card{
+  margin: 30px;
+  margin-left: 50px;
+  width: 700px;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap'); */
+
+.footer {
+    background-color: rgb(1, 1, 16);
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(189, 196, 203);
+    height: 330px;
+    width: 100%;
+    background-size: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 12px;
+}
+
+ul>li {
+    padding: 4px;
+    color:#C5CAE9;
+}
+ul>li>a{
+  text-decoration: none;
+  color: #C5CAE9;
+}
+
+
+ul>li:hover {
+    color: #957bda;
+    cursor: pointer
+}
+
+hr {
+    border-width: 3px
+}
+
+.card1 {
+    padding: 2% 7%
+  
+}
+
+.social>i {
+    padding: 1%;
+    font-size: 15px
+}
+
+.social>i:hover {
+    color: #957bda;
+    cursor: pointer;
+}
+
+.policy>div {
+    padding: 4px
+}
+
+.heading {
+    font-family: 'Titillium Web', sans-serif;
+    color: black
+}
+
+.divider {
+    border-top: 2px solid
+}
